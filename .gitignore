@@ -1,0 +1,24 @@
+.DS_Store
+node_modules/
+yarn.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+tests/**/coverage/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+/dist
+/pubilc/config
+/public/video/out.mp4
+/automatic.bat
+/automatic209.bat
+/autocopy.bat
+!/webstorm.config.js
