@@ -1,10 +1,12 @@
 export default {
-    // base: './',
+    //基础路径配置
+    // base: './',   
+
     themeConfig: {
-        siteTitle: 'vitepress-demo',
+        siteTitle: 'vitepress-demo',   //首页标题配置
         // logo: '',
 
-        //顶部导航设置
+        //顶部导航路由配置
         nav: [
             { text: '导航', link: '/guide/', activeMatch: '/guide/' },
             { text: '配置', link: '/config/', activeMatch: '/config/' },
@@ -17,17 +19,13 @@ export default {
             }
         ],
 
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-        ],
-
-        //侧边栏
+        //侧边栏路由配置
         sidebar: {
             '/guide/': [
                 {
                     text: 'Guide',
-                    collapsible: true,
-                    collapsed: false,
+                    collapsible: true,  //侧边栏收缩配置
+                    collapsed: false,   //侧边栏是否收缩配置
                     items: [
                         { text: 'Index', link: '/guide/' },
                         { text: 'One', link: '/guide/one' },
@@ -45,6 +43,13 @@ export default {
                     ]
                 }
             ]
-        }
+        },
+
+        //外部（社交）配置
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+        ],
+
+
     }
 }
